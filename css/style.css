@@ -1654,7 +1654,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 28, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_slider.scss */
     .slider_area .single_slider .phone_thumb img {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -1834,7 +1834,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 25, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_features.scss */
     .features_area .features_main_wrap .about_image img {
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -3929,6 +3929,7 @@ h3 {
     /* line 33, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_tesmonial.scss */
     .testmonial_area p {
         margin-top: 30px;
+        font-size: 15px;
     }
 }
 
