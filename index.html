@@ -24,6 +24,38 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .col-md-4 {
+            text-align: center;
+            padding-bottom: 50px;
+            border-right: 1px dashed black;
+        }
+        
+        .col-md-4:last-child {
+            border-right: 0px solid black;
+        }
+        
+        .counter {
+            animation-duration: 1s;
+            animation-delay: 0s;
+        }
+        
+        i {
+            font-size: 20px !Important;
+        }
+        
+        @media (max-width: 991px) {
+            .col-md-4 {
+                border-right: 0px dashed black;
+                border-bottom: 1px dashed black;
+                width: 50%;
+                margin: auto auto;
+            }
+            .col-md-4:last-child {
+                border-bottom: 0px dashed black;
+            }
+        }
+    </style>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -271,6 +303,25 @@
         </div>
     </div>
     <!--/ about  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1><span class="counter">2,523</span></h1>
+                <h3>Customers</h3>
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="col-md-4">
+                <h1><span class="counter">63,075</span></h1>
+                <h3>Total Web Pages</h3>
+                <i class="fa fa-desktop"></i>
+            </div>
+            <div class="col-md-4">
+                <h1><span class="counter">12,218</span></h1>
+                <h3>Cups Of Coffee</h3>
+                <i class="fa fa-coffee"></i>
+            </div>
+        </div>
+    </div>
     <!-- testmonial_area  -->
     <div class="testmonial_area">
         <div class="container">
@@ -453,7 +504,7 @@
                             Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="">Aidbook</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -488,9 +539,17 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script>
+        document.querySelector(".counter").counterUp({
+            delay: 10,
+            time: 2000
+        });
+        document.querySelector(".counter").addClass('animated fadeInDownBig');
+    </script>
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
